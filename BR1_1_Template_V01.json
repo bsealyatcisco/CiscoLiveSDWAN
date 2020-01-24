@@ -3,17 +3,8 @@
         {
             "templateId": "$BR1_VEDGE1_templateId",
             "device": [
-                {
-                    "csv-status": "complete",
-                    "csv-deviceId": "$BR1_VEDGE1_uuid",
-                    "csv-deviceIP": "10.3.0.1",
-                    "csv-host-name": "BR1-VEDGE1",
-                    "//system/host-name": "BR1-VEDGE1",
-                    "//system/system-ip": "10.3.0.1",
-                    "//system/site-id": "300",
-                    "csv-templateId": "$BR1_VEDGE1_templateId",
-                    "selected":"true"
-                }
+                
+                {"csv-status":"complete","csv-deviceId":"$BR1_VEDGE1_uuid","csv-deviceIP":"10.3.0.1","csv-host-name":"BR1-VEDGE1","/40/vpn40_intf_name/interface/if-name":"ge0/5","/40/vpn40_intf_name/interface/ip/address":"10.3.40.2/24","/40/vpn40_intf_name/interface/vrrp/40/priority":"100","/40/vpn40_intf_name/interface/vrrp/40/ipv4/address":"10.3.40.1","/20/vpn20_intf_name/interface/if-name":"ge0/4","/20/vpn20_intf_name/interface/ip/address":"10.3.20.2/24","/20/vpn20_intf_name/interface/vrrp/20/priority":"100","/20/vpn20_intf_name/interface/vrrp/20/ipv4/address":"10.3.20.1","/10/vpn10_intf_name/interface/if-name":"ge0/3","/10/vpn10_intf_name/interface/ip/address":"10.3.0.2/24","/10/vpn10_intf_name/interface/vrrp/10/priority":"100","/10/vpn10_intf_name/interface/vrrp/10/ipv4/address":"10.3.0.1","/512/vpn-instance/ip/route/0.0.0.0/0/next-hop/VPN512-GW-IP/address":"198.18.128.1","/512/eth0/interface/ip/address":"198.18.134.104/18","/0/vpn-instance/ip/route/0.0.0.0/0/next-hop/MPLS-GW-IP/address":"172.16.3.1","/0/vpn-instance/ip/route/0.0.0.0/0/next-hop/INET-GW-IP/address":"10.20.20.1","/0/vpn0_tloc_ext_if_name/interface/if-name":"ge0/2","/0/vpn0_tloc_ext_if_name/interface/ip/address":"10.10.10.1/24","/0/vpn0_tloc_ext_if_name/interface/tloc-extension":"ge0/0","/0/Internet-Interface-Name/interface/if-name":"ge0/1","/0/Internet-Interface-Name/interface/ip/address":"10.20.20.2/24","/0/MPLS-Interface-Name/interface/if-name":"ge0/0","/0/MPLS-Interface-Name/interface/ip/address":"172.16.3.2/30","//system/host-name":"BR1-VEDGE1","//system/gps-location/latitude":"34","//system/gps-location/longitude":"-118","//system/system-ip":"10.3.0.1","//system/site-id":"300","/0/MPLS-Interface-Name/interface/tunnel-interface/encapsulation/ipsec/preference":"100","/0/Internet-Interface-Name/interface/tunnel-interface/encapsulation/ipsec/preference":"100","csv-templateId":"$BR1_VEDGE1_templateId"}
             ],
             "isEdited": false,
             "isMasterEdited": false

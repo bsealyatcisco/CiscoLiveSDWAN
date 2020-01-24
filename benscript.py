@@ -15,7 +15,7 @@ import sys
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-print ('Sit Back - Enjoy the Ride - This will take about 1 minute to complete')
+print ('Sit Back - Enjoy the Ride - This will take about 2 minutes to complete. Please ensure that all templates have been attached to the correct devices and that all policies have been deleted before re-seating this lab.')
 ##################################################################################################################################
 #Connection Information for SDWAN 2000 dCloud Environment
 ##################################################################################################################################
@@ -57,6 +57,9 @@ try:
             and entry['host-name'] == BR2_VEDGE_name
         )
     )['uuid']
+except StopIteration:
+    pass
+try:
     BR1_VEDGE1_uuid = next(
         (entry for entry in data
             if 'host-name' in entry
@@ -203,8 +206,8 @@ else:
     print (r.status_code)
     print ('Template failed to attach to ' + BR2_VEDGE_name)
 
-print ('BRANCH2 Template Attach done, processing for 10 seconds')
-for remaining in range(10, 0, -1):
+print ('BRANCH2 Template process done, processing for 30 seconds')
+for remaining in range(30, 0, -1):
     sys.stdout.write("\r")
     sys.stdout.write("{:2d} seconds remaining.".format(remaining))
     sys.stdout.flush()
@@ -225,8 +228,8 @@ else:
     print (r.status_code)
     print ('Template failed to attach to ' + BR1_VEDGE1_name)
 
-print ('BRANCH1 VEDGE1 Template Attach done, processing for 10 seconds')
-for remaining in range(10, 0, -1):
+print ('BRANCH1 VEDGE1 process done, processing for 30 seconds')
+for remaining in range(30, 0, -1):
     sys.stdout.write("\r")
     sys.stdout.write("{:2d} seconds remaining.".format(remaining))
     sys.stdout.flush()
