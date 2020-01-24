@@ -16,6 +16,7 @@ import sys
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 print ('Sit Back - Enjoy the Ride - This will take about 2 minutes to complete. Please ensure that all templates have been attached to the correct devices and that all policies have been deleted before re-seating this lab.')
+print ('Please keep in mind, it could take an additional 1 minute for vManage to reflect ANY device template attachment changes.')
 ##################################################################################################################################
 #Connection Information for SDWAN 2000 dCloud Environment
 ##################################################################################################################################
